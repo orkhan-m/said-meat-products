@@ -28,11 +28,9 @@ html {
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-  /* color: #343a40; */
-  color: #a61e4d;
 }
 
 /* ****************************** */
@@ -58,17 +56,31 @@ body {
   display: flex;
   align-items: center;
   gap: 1.2rem;
+
+  color: #a61e4d;
   font-size: 1.6rem;
   font-weight: 600;
 }
 
-.nav-bar-list {
+.nav-bar {
+  color: #a61e4d;
   list-style: none;
   font-size: 2.4rem;
   font-weight: 600;
 
   display: flex;
   gap: 3.6rem;
+}
+
+.nav-bar-link:link,
+.nav-bar-link:visited {
+  text-decoration: none;
+  color: #a61e4d;
+}
+
+.nav-bar-link:hover,
+.nav-bar-link:active {
+  transform: translateY(-0.3rem);
 }
 
 /* ****************************** */
@@ -87,27 +99,31 @@ body {
 }
 
 .hero-text {
-  margin: 5.2rem 5.2rem;
+  color: #a61e4d;
+  margin: 3.2rem 3.2rem;
 }
 
 .heading-1 {
-  font-size: 5.2rem;
+  font-size: 4.4rem;
   text-align: left;
-
   margin-bottom: 2.4rem;
-
-  position: relative;
 }
 
 .heading-sub-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
 
   line-height: 1.5;
 }
 
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-img-1 {
-  width: 100%;
+  max-width: 55%;
 }
 
 /* ****************************** */
@@ -131,8 +147,8 @@ body {
 }
 
 .product-img {
-  width: 270px;
-  height: 270px;
+  width: 200px;
+  height: 200px;
   align-self: center;
   margin-bottom: 1.2rem;
   border-radius: 50%;
@@ -150,6 +166,7 @@ body {
   font-size: 2.4rem;
   align-self: center;
   font-weight: 500;
+  display: none;
 }
 
 .product-list {
@@ -178,11 +195,5 @@ body {
 }
 
 .btn-product:hover {
-  color: #a61e4d;
-  background-color: #ffe3e5;
-
-  /* box-shadow: 0 0 0 0; */
-  box-shadow: 0 -3px rgba(0, 200, 0, 0.3);
-  /* 0 0 0 2px white, */
-  /* 0.3em 0.3em 1em rgba(200, 0, 0, 0.6); */
+  background-color: #fff0f6;
 }
